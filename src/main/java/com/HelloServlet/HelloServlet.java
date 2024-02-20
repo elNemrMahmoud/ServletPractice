@@ -1,4 +1,4 @@
-package com.myservlet;
+package com.HelloServlet;
 
 import jakarta.servlet.Servlet;
 import jakarta.servlet.ServletConfig;

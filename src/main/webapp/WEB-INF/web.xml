@@ -10,19 +10,51 @@
     </welcome-file>
     </welcome-file-list>
 
+
+    <!-- Returns a text with a parameter from the config file.-->
     <servlet>
         <servlet-name>HelloServlet</servlet-name>
-        <servlet-class>com.myservlet.HelloServlet</servlet-class>
+        <servlet-class>com.HelloServlet.HelloServlet</servlet-class>
         <init-param>
             <param-name>username</param-name>
-            <param-value>mahmoud</param-value>
+            <param-value>Hunter</param-value>
         </init-param>
     </servlet>
 
+    <servlet>
+        <servlet-name>FormDisplayServlet</servlet-name>
+        <servlet-class>com.ServletCommunication.FormDisplay</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>FormProcessServlet</servlet-name>
+        <servlet-class>com.ServletCommunication.FormProcess</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>MimeTypesServlet</servlet-name>
+        <servlet-class>com.MimeServlets.MimeSelector</servlet-class>
+    </servlet>
+
+<!-- Servlet Mapping //////////////////////////////////////////////////////  -->
+    <servlet-mapping>
+        <servlet-name>FormDisplayServlet</servlet-name>
+        <url-pattern>/form</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>FormProcessServlet</servlet-name>
+        <url-pattern>/formresult</url-pattern>
+    </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>MimeTypeServlet</servlet-name>
+        <url-pattern>/mimes</url-pattern>
     </servlet-mapping>
 
 </web-app>
