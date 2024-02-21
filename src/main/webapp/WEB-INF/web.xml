@@ -32,8 +32,18 @@
     </servlet>
 
     <servlet>
-        <servlet-name>MimeTypesServlet</servlet-name>
-        <servlet-class>com.MimeServlets.MimeSelector</servlet-class>
+        <servlet-name>MimeServlet</servlet-name>
+        <servlet-class>com.Mimes.MimeServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PDFMimeServlet</servlet-name>
+        <servlet-class>com.Mimes.PdfServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>HeaderAndFooter</servlet-name>
+        <servlet-class>com.ServletRDIncludeExample.HeaderAndFooterServlet</servlet-class>
     </servlet>
 
 <!-- Servlet Mapping //////////////////////////////////////////////////////  -->
@@ -51,10 +61,22 @@
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>MimeServlet</servlet-name>
+        <url-pattern>/mime</url-pattern>
+    </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>MimeTypeServlet</servlet-name>
-        <url-pattern>/mimes</url-pattern>
+        <servlet-name>PDFMimeServlet</servlet-name>
+        <url-pattern>/pdfmime</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HeaderAndFooter</servlet-name>
+        <url-pattern>/headandfoot</url-pattern>
+    </servlet-mapping>
+
+    
 
 </web-app>

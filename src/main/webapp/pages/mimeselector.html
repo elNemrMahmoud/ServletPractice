@@ -1,40 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style/style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="style/style.css"
+    />
 
-    <script src='../javascript/script.js'></script>
-</head>
-<body>
-    <h1 class="title">Servlets</h1>
+    <script src="../javascript/script.js"></script>
+  </head>
+  <body>
+    <h1 class="title">Mime Selection</h1>
     <div class="container">
       <div class="card">
-        <h2>Hello Servlet D1L1</h2>
-        <button onclick="window.location='http://localhost:8181/servlets/hello'">Goto Hello Servlet</button>
-        <p>This servlet simply prints a servlet param name</p>
+        <h2>PDF Mime</h2>
+        <button
+          onclick="window.location='http://localhost:8181/servlets/pdfmime'"
+        >
+          Goto PDF Mime
+        </button>
+        <p>This servlet returns a pdf mime</p>
       </div>
-        <div class="card">
-          <h2>Servlet Communication D2L1 </h2>
-          <button onclick="window.location='http://localhost:8181/servlets/form'">Goto Form Servlet</button>
-          <p>This servlet directs you to a form servlet which takes 3 values as input, and redirects you to
-            another servlet which prints that information.
-          </p>
-        </div>
-
-        <div class="card">
-          <h2>Mime Types D2L2 </h2>
-          <button onclick="window.location='http://localhost:8181/servlets/mimes'">Go to Servlet</button>
-          <p>This servlet simply prints a servlet param name</p>
-        </div>
-
-        <div class="card">
-          <h2>Hello Servlet</h2>
-          <button onclick="window.location='http://localhost:8181/servlets/hello'">Go to Servlet</button>
-          <p>This servlet simply prints a servlet param name</p>
-        </div>
-</body>
+    </div>
+  </body>
 </html>
