@@ -1,4 +1,4 @@
-package com.ServletCommunication;
+package com.controller.ServletCommunication;
 
 import java.io.IOException;
 

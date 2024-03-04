@@ -11,10 +11,20 @@
     </welcome-file-list>
 
 
+    <servlet>
+        <servlet-name>FrontControllerServlet</servlet-name>
+        <servlet-class>com.controller.FrontControllerServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>FrontControllerServlet</servlet-name>
+        <url-pattern>/controller/*</url-pattern>
+    </servlet-mapping>
+    
     <!-- Returns a text with a parameter from the config file.-->
     <servlet>
         <servlet-name>HelloServlet</servlet-name>
-        <servlet-class>com.HelloServlet.HelloServlet</servlet-class>
+        <servlet-class>com.controller.HelloServlet.HelloServlet</servlet-class>
         <init-param>
             <param-name>username</param-name>
             <param-value>Hunter</param-value>
@@ -23,31 +33,67 @@
 
     <servlet>
         <servlet-name>FormDisplayServlet</servlet-name>
-        <servlet-class>com.ServletCommunication.FormDisplay</servlet-class>
+        <servlet-class>com.controller.ServletCommunication.FormDisplay</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>FormProcessServlet</servlet-name>
-        <servlet-class>com.ServletCommunication.FormProcess</servlet-class>
+        <servlet-class>com.controller.ServletCommunication.FormProcess</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>MimeServlet</servlet-name>
-        <servlet-class>com.Mimes.MimeServlet</servlet-class>
+        <servlet-class>com.controller.Mimes.MimeServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>PDFMimeServlet</servlet-name>
-        <servlet-class>com.Mimes.PdfServlet</servlet-class>
+        <servlet-class>com.controller.Mimes.PdfServlet</servlet-class>
     </servlet>
 
     <servlet>
         <servlet-name>HeaderAndFooter</servlet-name>
-        <servlet-class>com.ServletRDIncludeExample.HeaderAndFooterServlet</servlet-class>
+        <servlet-class>com.controller.ServletRDIncludeExample.HeaderAndFooterServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>LoginForm</servlet-name>
+        <servlet-class>com.controller.LoginForm.LoginFormServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>RegistrationForm</servlet-name>
+        <servlet-class>com.controller.LoginForm.RegistrationFormServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LoginValidator</servlet-name>
+        <servlet-class>com.controller.LoginForm.LoginValidatorServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AddUser</servlet-name>
+        <servlet-class>com.controller.LoginForm.RegisterUser</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SearchbyKeyword</servlet-name>
+        <servlet-class>com.controller.LoginForm.SearchServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CookieSender</servlet-name>
+        <servlet-class>com.controller.CookieTest.CookieSenderServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CookieReciever</servlet-name>
+        <servlet-class>com.controller.CookieTest.CookieRecieverServlet</servlet-class>
+    </servlet>
+    
+
 <!-- Servlet Mapping //////////////////////////////////////////////////////  -->
-    <servlet-mapping>
+    <!-- <servlet-mapping>
         <servlet-name>FormDisplayServlet</servlet-name>
         <url-pattern>/form</url-pattern>
     </servlet-mapping>
@@ -77,6 +123,14 @@
         <url-pattern>/headandfoot</url-pattern>
     </servlet-mapping>
 
-    
+    <servlet-mapping>
+        <servlet-name>LoginForm</servlet-name>
+        <url-pattern>/loginform</url-pattern>
+    </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>LoginValidator</servlet-name>
+        <url-pattern>/loginValidate</url-pattern>
+    </servlet-mapping> -->
+    
 </web-app>

@@ -23,7 +23,7 @@
       <div class="card">
         <h2>Hello Servlet D1L1</h2>
         <button
-          onclick="window.location='http://localhost:8181/servlets/hello'"
+        onclick="window.location='http://localhost:8181/servlets/controller?action=hello'"
         >
           Goto Hello Servlet
         </button>
@@ -33,7 +33,7 @@
 
       <div class="card">
         <h2>Servlet Communication D2L1</h2>
-        <button onclick="window.location='http://localhost:8181/servlets/form'">
+        <button onclick="window.location='http://localhost:8181/servlets/controller?action=form'">
           Goto Form Servlet
         </button>
         <p>
@@ -45,7 +45,7 @@
 
       <div class="card">
         <h2>Mime Types D2L2</h2>
-        <button onclick="window.location='http://localhost:8181/servlets/mime'">
+        <button onclick="window.location='http://localhost:8181/servlets/controller?action=mime'">
           Goto Mime Selection
           </button>
         <p>This servlet takes you to a mime selection page</p>
@@ -54,13 +54,59 @@
       <div class="card">
         <h2>Request Dispatch Include D3L1</h2>
         <button
-          onclick="window.location='http://localhost:8181/servlets/headandfoot'"
+        onclick="window.location='http://localhost:8181/servlets/controller?action=headandfoot'"
         >
           Go to Servlet
         </button>
         <p>This servlet includes two html files using Request Dispatcher</p>
+      </div>
+
+      
+      <div class="card">
+        <h2>Cookie D3L2</h2>
+        <button
+        onclick="window.location='http://localhost:8181/servlets/controller?action=CookieTest'"
+        >
+          Go to Servlet
+        </button>
+        <p>This servlet Tests two servlets. One saves a cookie on the page. Then the other reads it and sets an attribute on the request.</p>
 
       </div>
+
+      <div class="card">
+        <h2>Login/Register Employee</h2>
+        <button
+        onclick="window.location='http://localhost:8181/servlets/controller?action=landing'"
+        >
+          Go to Servlet
+        </button>
+        <p>Takes you to a page where you can login or Register to access unique pages.</p>
+
+      </div>
+
+      <div class="card">
+        <h2>JSP include D4L2</h2>
+        <button
+        onclick="window.location='http://localhost:8181/servlets/controller?action=headandfoot2'"
+        >
+          Go to Servlet
+        </button>
+        <p>This servlet includes two html files using JSP include & include Directive</p>
+
+      </div>
+
+
+      <div class="card">
+        <h2>Random Number Generator D4L3</h2>
+        <button
+        onclick="window.location='http://localhost:8181/servlets/controller?action=RNG'"
+        >
+          Go to JSP
+        </button>
+        <p>Takes you to a JSP page that uses a utility class for printing a random number between two ranges</p>
+
+      </div>
+
     </div>
   </body>
 </html>

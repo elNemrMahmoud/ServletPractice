@@ -1,4 +1,4 @@
-package com.Mimes;
+package com.controller.Mimes;
 
 import java.io.IOException;
 import java.io.InputStream;

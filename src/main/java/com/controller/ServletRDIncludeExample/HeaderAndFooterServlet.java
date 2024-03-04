@@ -1,4 +1,4 @@
-package com.ServletRDIncludeExample;
+package com.controller.ServletRDIncludeExample;
 
 import java.io.IOException;
 

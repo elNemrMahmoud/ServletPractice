@@ -1,4 +1,4 @@
-package com.Mimes;
+package com.controller.ServletCommunication;
 
 import java.io.IOException;
 
@@ -8,12 +8,13 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-public class MimeServlet extends HttpServlet {
+public class FormDisplay extends HttpServlet {
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
-        RequestDispatcher view = request.getRequestDispatcher("pages/mimeselector.html");
+                
+        RequestDispatcher view = request.getRequestDispatcher("pages/simpleform.html");
         view.forward(request, response);
     }
 

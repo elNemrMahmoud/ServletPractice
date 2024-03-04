@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="style/style.css"
+    />
+
+    <script src="../javascript/script.js"></script>
+  </head>
+  <body>
+    <h1 class="title">Employee Page</h1>
+    <div class="container">
+      <div class="card">
+        <h2>Employee Login</h2>
+        <button
+          onclick="window.location='http://localhost:8181/servlets/controller?action=loginform'"
+        >
+          Login
+        </button>
+        <p>This takes you to the Login page. Data entered will be validated against a database</p>
+      </div>
+
+      <div class="card">
+        <h2>Employee Register</h2>
+        <button
+          onclick="window.location='http://localhost:8181/servlets/controller?action=register'"
+        >
+          Register
+        </button>
+        <p>This takes you to the Registration page. Data will be saved to the database</p>
+      </div>
+    </div>
+  </body>
+</html>

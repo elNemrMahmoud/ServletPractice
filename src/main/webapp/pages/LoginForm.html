@@ -3,14 +3,15 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Login Form </title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style/style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='style/formstyle.css'>
 
+    <script src='../javascript/script.js'></script>
 </head>
 <body>
-    <form action="/servlets/controller?action=formresult" method="post">
+    <form action="/servlets/controller?action=loginValidate" method="post">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" placeholder="Enter your username" required>
 
@@ -18,11 +19,6 @@
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-        <br>
-
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
         <br>
 
